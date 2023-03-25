@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Formulaire de randonnée </title>
+  <meta charset="Utf_8">
+  <link rel="stylesheet" href="form.css">
+  <style></style>
+</head>
+
+<body>
+  <div class="maindiv">
+    <div>
+         <img src="C:\Users\admin\OneDrive\Bureau\projet randonné\img\logo.png" id="logo">
+    </div>
+    <div>
+        <div >
+          <a href="home.html"> Acceuil </a>
+          <a href="content.html"> Nos sorties</a>
+          <a href="form.html"> Adhesion</a>
+        </div>  
+    </div>
+</div>
+
+    
+    <!-- formulaire -->
+    <div class="contenu">  
+      <div class="form">
+      <form action="/action_page.php">
+            <fieldset>
+                <legend>Reservez votre place maintenant ! </legend><br>
+              <label for="fname">Nom</label>
+              <input type="text" id="fname" name="fname" placeholder="Foulen" required><br>
+              <label for="lname">Prénom</label>
+              <input type="text" id="lname" name="lname" placeholder="Ben Foulen" required><br>
+              <label for="email">Votre E-mail   </label>
+               <input type="email" id="email" name="email" placeholder="foulen@example.com" required><br>
+               <label for="tel">Votre numéro de téléphone   </label>
+               <input type="number" id="tel" name="tel" placeholder="+21636363636"  required/><br>
+              
+            
+              <label for="gender"> Genre</label>
+              <select name="gender">                 
+	            <option value="male">Homme</option>
+              <option value="female">Femme</option>
+	            <option value="other">Autre</option>
+              </select>
+
+              
+               <br><br>
+              
+              <label for="lname">Date de naissance:</label><br> 
+              <input type="date" id="birthday" name="birthday">
+              <br>
+              <label> Avez-vous un animal de compagnie ?</label><br>
+              <input type="checkbox" id="pet" name="pet" value="pet">
+              <label for="pet"> Oui, j'ai un animal de compagnie .</label><br>
+              <input type="checkbox" id="npet" name="npet" value="npet">
+              <label for="pet"> Non, je n'ai pas un animal de compagnie .</label>
+              
+              <br>
+
+              <div>
+              <label for="rand">Quelle randonnée désirez-vous rejoindre :</label><br>  
+              <input type="checkbox" id="rand1" name="fav_language" value="HT">
+             <label for="html">Djerba</label><br>
+             <input type="checkbox" id="rand2" name="fav_language" value="CSS">
+             <label for="css">Bni Mtir</label><br>
+             <input type="checkbox" id="rand3" name="fav_language" value="JavaScr">  
+              <label for="css">Ghar Melh</label><br>
+              </div> 
+              <label for="quantity">Nombre des membres de groupe (entre 1 et 4):</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="4"><br><br>
+
+              <input type="submit" value="Envoyer">
+              <input type="reset">
+
+            </fieldset>
+          </form>
+        </div>
+                <br><br> 
+           <!-- feedback      -->
+         <!-- <div class="feedback"> 
+          <form action="">
+            <fieldset>
+              <legend>Contacte-nous</legend>
+              <label for="fname">Nom:</label><br>
+              <input type="text" id="fname" name="fname" placeholder="Foulen" required><br>
+              <label for="lname">Prénom:</label><br>
+              <input type="text" id="lname" name="lname" placeholder="Ben Foulen" required><br>
+              <label for="email">E-mail:</label><br>
+               <input type="email" id="email" name="email" placeholder="foulen@example.com" required><br>
+               <label for="commentaire">Commentaire :</label><br>
+               <input type="text" id="commentaire" name="commentaire" maxlength="300"	 placeholder="écrire ici...."><br><br>              
+
+              <input type="submit" value="Envoyer">
+            </fieldset>
+          </form>
+        </div> 
+        </div> -->
+        <br>   <br>  
+        <!-- footer -->
+    <div class="secondcatgs" > <p id="copyright"> ©2022 All rights reserved. Privacy and Terms. </p>  </div>
+</body>
+</html>
